@@ -16,30 +16,30 @@ will do this and only load NAIRR job data into XDMoD.
 ## Username mappings
 
 The Metrics team requires the mapping between the identifier for a person and their system username
-on a NAIRR allocated resource. Where system username is the username that appears in
-the resource manager logs. For example, for the slurm resource manager this will be the `User`
+on a NAIRR allocated resource, where system username is the username that appears in
+the resource manager logs. For example, for the Slurm resource manager, this will be the `User`
 field from the `sacct` command.
 
 Mapping information must be UTF-8 encoded in JSON format. All timestamps must be in UTC. We support both JSON 
-or JSON lines format.
+and JSON lines formats.
 
-[Example Username Mapping \(JSON format\)](examples/person_map.json)
+[Example username mapping \(JSON format\)](examples/person_map.json)
 
-[Example Username Mapping \(JSON Lines format\)](examples/person_map.jsonl)
+[Example username mapping \(JSON Lines format\)](examples/person_map.jsonl)
 
 ## Project name mappings
 
 The Metrics team requires the mapping between the identifier for a NAIRR project and the corresponding
 identifier in the resource manager logs. For example, if a compute resource is using
-slurm and using slurm accounts to manage access then the Metrics team needs the mapping
-between the NAIRR project `NAIRRxxxxxx` the `Account` field form the `sacct` command.
+Slurm accounts to manage access, then the Metrics team needs the mapping
+between the NAIRR project `NAIRRxxxxxx` and the `Account` field from the `sacct` command.
 
 Mapping information must be UTF-8 encoded in JSON format. All timestamps must be in UTC. We support both JSON 
-or JSON lines format.
+and JSON lines formats.
 
-[Example Project Mapping \(JSON format\)](examples/project_map.json)
+[Example project mapping \(JSON format\)](examples/project_map.json)
 
-[Example Project Mapping \(JSON Lines format\)](examples/project_map.jsonl)
+[Example project mapping \(JSON Lines format\)](examples/project_map.jsonl)
 
 # Sending data to the Metrics team
 
